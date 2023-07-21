@@ -1,0 +1,29 @@
+npm init -y  //สร้าง package.json
+npm install express cors mysql   //สร้าง
+npm nodemon //
+
+
+ืnodemon index.js
+node index.js
+
+require() //เป็นการนำเข้าไฟล์ ไลบารี แพ็คเก็จ
+
+app.use()//สื่งที่ใช้
+
+app.get()//ส่งออกค่าที่จะใช้
+
+app.listen()//การรับฟัง port ที่เรากำหนด 
+
+
+app.get('/',(req,res)=>{})// หน้าแรก index
+
+config/db.js() การตั้งค่าฐานข้อมูล
+
+db/db.js // การเชื่อมต่อฐานข้อมูล
+
+// วิธีการสร้าง scripts ของตัวเอง 
+// สร้างในหน้า package.json ในแท็ก scripts "start:dev":"nodemon index.js" แบบเนี้ย
+// ชื่อ scripts "start:dev" ตามด้วย คำสั่ง run "nodemon index.js"
+
+// scripts = รวมคำสั่งต่างๆให้ทำงาน
+
