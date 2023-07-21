@@ -3,7 +3,7 @@ npm install express cors mysql   //สร้าง
 npm nodemon //
 
 
-ืnodemon index.js
+nodemon index.js
 node index.js
 
 require() //เป็นการนำเข้าไฟล์ ไลบารี แพ็คเก็จ
