@@ -2,23 +2,13 @@ const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 const express = require("express");
 const router = express.Router();
+const { insertRestaurant, getRestaurant, getIdRestaurant, updateRestaurant, deleteRestaurant } = require('../controllers/restaurant.controllers');
 
-// router.post("/user", async (req, res) => {
-//     const{name,email}=req.body 
-//     const user = await prisma.user.create({
-//         data: {
-//           name: name,
-//           email: email,
-//         },
-//       })
-//       console.log(user)
-      
-    // try {
-    //     const restaurant = await Restaurant.getAllRestaurant();
-    //     res.status(200).json(restaurant);
-    // } catch (err) {
-    //     res.status(500).json({ error: "ผิด" });
-    // }
-// });
+router.post("/restaurant", insertRestaurant);
+router.get("/restaurant", getRestaurant);
+router.get("/restaurant/:id", getIdRestaurant);
+router.put("/restaurant/:id", updateRestaurant);
+router.delete("/restaurant/:id", deleteRestaurant);
 
 module.exports = router;
+
